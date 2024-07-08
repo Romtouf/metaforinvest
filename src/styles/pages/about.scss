@@ -1,0 +1,28 @@
+.about {
+  padding: $spacer;
+  background-color: $background-color;
+
+  h1,
+  h2 {
+    color: $text-color;
+  }
+
+  p {
+    font-size: $font-size-base;
+    color: $secondary-color;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      //   background: url('../assets/icons/check.svg') no-repeat left center;
+      padding-left: 30px;
+      margin-bottom: $spacer-half;
+      font-size: $font-size-base;
+      color: $secondary-color;
+    }
+  }
+}

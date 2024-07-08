@@ -1,0 +1,35 @@
+.home {
+  .header {
+    // background-image: url("../assets/images/header-bg.jpg");
+    background: #000;
+    height: 100vh;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    h1 {
+      font-size: $font-size-large;
+      margin-bottom: $spacer;
+    }
+
+    p {
+      font-size: $font-size-base;
+      margin-bottom: $spacer;
+    }
+  }
+
+  @include responsive($breakpoint-md) {
+    .header {
+      height: 50vh;
+
+      h1 {
+        font-size: $font-size-large;
+      }
+
+      p {
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.services {
+  padding: $spacer;
+  background-color: $background-color;
+
+  h1 {
+    color: $text-color;
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacer;
+
+    .service-item {
+      flex: 1 1 calc(33.333% - $spacer-double);
+      background: #fff;
+      padding: $spacer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+
+      h2 {
+        color: $primary-color;
+      }
+
+      p {
+        font-size: $font-size-base;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  @include responsive($breakpoint-md) {
+    .service-list {
+      flex-direction: column;
+      gap: $spacer-half;
+
+      .service-item {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

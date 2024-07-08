@@ -1,0 +1,33 @@
+.contact {
+  padding: $spacer;
+  background-color: $background-color;
+
+  h1 {
+    color: $text-color;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: $font-size-base;
+      color: $text-color;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+      font-size: $font-size-base;
+    }
+
+    button {
+      @include button-style(white, $primary-color, darken($primary-color, 10%));
+    }
+  }
+}

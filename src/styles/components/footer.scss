@@ -1,0 +1,50 @@
+.footer {
+  background-color: $text-color;
+  color: white;
+  padding: $spacer;
+  text-align: center;
+
+  .footer-content {
+    @include flex-center;
+    flex-wrap: wrap;
+
+    .footer-section {
+      flex: 1 1 300px;
+      margin: $spacer-half;
+
+      h2 {
+        margin-bottom: $spacer-half;
+        font-size: $font-size-large;
+      }
+
+      p {
+        font-size: $font-size-base;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: $spacer-half;
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: $spacer;
+    border-top: 1px solid lighten($text-color, 20%);
+    padding-top: $spacer-half;
+  }
+}

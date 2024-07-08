@@ -1,0 +1,48 @@
+.portfolio {
+  padding: $spacer;
+  background-color: $background-color;
+
+  h1 {
+    color: $text-color;
+  }
+
+  p {
+    font-size: $font-size-base;
+    color: $secondary-color;
+    line-height: 1.6;
+  }
+
+  .portfolio-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacer;
+
+    .portfolio-item {
+      flex: 1 1 calc(50% - $spacer-double);
+      background: #fff;
+      padding: $spacer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+
+      h2 {
+        color: $primary-color;
+      }
+
+      p {
+        font-size: $font-size-base;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  @include responsive($breakpoint-md) {
+    .portfolio-details {
+      flex-direction: column;
+      gap: $spacer-half;
+
+      .portfolio-item {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

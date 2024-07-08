@@ -1,0 +1,19 @@
+body {
+  font-family: "Arial, sans-serif";
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+.cta-button {
+  @include button-style(white, $primary-color, darken($primary-color, 10%));
+}
+
+@media (max-width: $breakpoint-md) {
+  .header,
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
